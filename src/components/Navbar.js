@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {FaAngleRight } from "react-icons/fa";
+import { HiChevronRight } from "react-icons/hi";
 import { FaSistrix } from "react-icons/fa";
 import "./App.css";
 function Navbar(){
@@ -9,10 +9,10 @@ function Navbar(){
     <div className='Navbar'>
         <div className='leftSide'>
             <img id="logo" src="ticket.png"/><h2>ticketlab</h2>
-            <button onClick={()=>setShowLinks(!showLinks)}>Menu<FaAngleRight id="arrow"/></button>
+            <button onClick={()=>setShowLinks(!showLinks)}>Menu<HiChevronRight id="arrow"/></button>
             <div className='searchbar'>
                 <button id="search"><FaSistrix/></button>
-                <input type="text" placeholder='     Event,artist or location' />
+                <input type="text" placeholder='    Event,artist or location' />
             </div>   
         </div>
         <div className='rightSide'>

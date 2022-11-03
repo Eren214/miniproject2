@@ -1,5 +1,5 @@
 import React from "react";
-//import SearchBar from './components/searchBar'
+
 
 //const logoSection="Logo Here";
 //const menus=["HOME","ABOUT","CONTACT US","LOGIN"];
@@ -17,6 +17,7 @@ class Header extends React.Component{
         <div className="navbar">
             <img id="logo" src="ticket.png"/><h2>ticketlab</h2>
             <input id="searchbar"  type="search"  placeholder="  Events,artist or location" /*onChange={handleChange}value={searchInput}*//>
+            
             <ul>
                 {this.menus.map(menu=>(
                 <li>{menu}</li>
