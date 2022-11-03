@@ -57,7 +57,7 @@ class CarouselComponent extends React.Component {
                             </Carousel>
                         </div>
                     </div>
-                    <button id="get-ticket" className="btn"><h6>Get Tickets Now</h6></button>
+                    <button id="get-ticket" className="btn-primary"><h6>Get Tickets Now</h6></button>
                 </div>
             </div>
         )
