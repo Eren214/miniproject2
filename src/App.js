@@ -1,23 +1,17 @@
-import React from 'react';
+import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
-import Navbar from "./components/Navbar";
-import Header from './Header';
-import Footer from './Footer';
-import CarouselComponent from './CarouselComponent';
-
-
-
+import Navbar from './components/navbar/Navbar';
+import Searchbar from './components/searchbar/SearchBar';
+import Footer from './components/footer/Footer';
+import CarouselComponent from './components/carousel/CarouselComponent';
 
 function App() {
   return (
-  <div>
-    <Navbar/>
-    <CarouselComponent></CarouselComponent>
-    
-    <hr/>
-   <Footer/>
-  </div>
+    <>
+      <Navbar />
+      <CarouselComponent/>
+      <Footer />
+    </>
   );
 }
 

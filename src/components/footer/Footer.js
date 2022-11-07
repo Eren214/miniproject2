@@ -1,4 +1,5 @@
 import React from "react";
+import './Footer.css';
 
 class Footer extends React.Component{
     constructor(props){
@@ -32,8 +33,8 @@ class Footer extends React.Component{
                     </div>
                     <div className="col-md-3 footer-image">
                     <h2>Download App</h2>
-                    <img id="playstore" className="img-fluid" src="./goggleapp.png"/>
-                    <img id="applestore" className="img-fluid" src="./apolstore.png"/>
+                    <img id="playstore" className="img-fluid" src="./images/goggleapp.png"/>
+                    <img id="applestore" className="img-fluid" src="./images/apolstore.png"/>
                     </div>
                 </div>
                 <hr/>
