@@ -1,15 +1,11 @@
 import React from 'react';
-
-import Navbar from '../components/navbar/Navbar';
 import SignIn from '../components/login/SignIn';
-import Footer from '../components/footer/Footer';
+import Carousel2 from '../components/carousel2/Carousel2';
 
 const SigninPage = () => {
     return (
         <>
-           <Navbar /> 
            <SignIn />
-           <Footer />
         </>
     )
 }

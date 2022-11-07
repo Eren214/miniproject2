@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import './SignIn.css';
 import { FaFacebookF } from "react-icons/fa";
-import { FaGooglePlusG } from "react-icons/fa";;
+import { FaGooglePlusG } from "react-icons/fa";
+import {Link} from 'react-router-dom';
 
 const SignIn = (props) => {
     const [email, setEmail] = useState('');
@@ -12,18 +13,18 @@ const SignIn = (props) => {
         console.log(email);
     }
 return (
-<section className="vh-100">
-  <div className="container py-5 h-100">
+<section  className="vh-100">
+  <div id="singin" className="container py-5 h-100">
     <div className="row d-flex align-items-center justify-content-center h-100">
           <h2 id="form-title">Sign in to Ticketlab</h2>
       <div className="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
           <form onSubmit={handleSubmit}>
           <div className="form-outline mb-4">
-            <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" id="form1Example13" className="form-control form-control-lg" placeholder="Email"/>
+            <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" id="email" className="form-control form-control-lg" placeholder="Email"/>
           </div>
 
           <div className="form-outline mb-4">
-            <input value={pass} onChange={(e) => setPass(e.target.value)}  type="password" id="form1Example23" className="form-control form-control-lg" placeholder="Password"/>
+            <input value={pass} onChange={(e) => setPass(e.target.value)}  type="password" id="password" className="form-control form-control-lg" placeholder="Password"/>
           </div>
 
           <div className="d-flex justify-content-around align-items-center mb-4">
@@ -31,7 +32,7 @@ return (
               <input className="form-check-input" type="checkbox" value="" id="form1Example3"  />
               <label className="form-check-label" for="form1Example3"> Remember me </label>
             </div>
-              <a href="#!">Forgot password?</a>
+              <Link id="forgot" to=" ">Forgot password?</Link>
           </div>
 
           
@@ -48,7 +49,7 @@ return (
           <a id="twitter" className="btn btn-lg"  href="#!"
             role="button"><FaGooglePlusG/>
             <i className="fab fa-twitter me-2"></i>Continue with Google</a>
-            <p className="mb-5 pb-lg-2" >Don't have an account? <a href="#!">Register here</a></p>
+            <p className="mb-5 pb-lg-2" >Don't have an account? <Link id="register" to='/register'>Register here</Link></p>
         </form>
       </div>
     </div>

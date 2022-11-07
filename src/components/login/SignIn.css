@@ -19,10 +19,20 @@ color: #fff;
     margin: 10px 0;
 }
 #form-title{
-    text-align: center;
+   
     color: rgb(104, 103, 103);
-    margin-left: 50px;
+    margin-left: 80px;
 }
 #form1Example3{
     font-size: 18px;
+}
+#signin{
+    background: rgb(185, 116, 26);
+    align-items: center;
+}
+#email,#password{
+    background: #eee;
+}
+#forgot,#register{
+    text-decoration: none;
 }

@@ -1,0 +1,53 @@
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+#twitter{
+background-color: #ee5569;
+color: #fff;
+}
+#fbook{
+background-color:#3b5998;
+color: #fff;
+}
+.btn-lg{
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+}
+#form-title{
+    text-align: center;
+    color: rgb(104, 103, 103);
+    margin-left: 50px;
+}
+#signin{
+    background: rgb(185, 116, 26);
+    align-items: center;
+}
+#email,#password{
+    background: #eee;
+}
+#fname{
+    background: #eee;
+    width: 220px;
+    margin-right: 12px;
+}
+#lname{
+    background: #eee;
+    width: 220px;
+}
+#privacy{
+    text-decoration: none;
+}
+#login{
+    text-decoration: none;
+}
+#terms{
+    font-size: 12px;
+}
+#already{
+    text-align: center;
+}
