@@ -1,14 +1,16 @@
 import React, {useState} from 'react';
 import { HiChevronRight } from "react-icons/hi";
 import { FaSistrix } from "react-icons/fa";
-import "./App.css";
+import "./Navbar.css";
+import {Link} from 'react-router-dom';
+
 function Navbar(){
 
     const [showLinks, setShowLinks]=useState(false);
     return(
     <div className='Navbar'>
         <div className='leftSide'>
-            <img id="logo" src="ticket.png"/><h2>ticketlab</h2>
+            <img id="logo" src="./images/ticket.png"/><h2>ticketlab</h2>
             <button onClick={()=>setShowLinks(!showLinks)}>Menu<HiChevronRight id="arrow"/></button>
             <div className='searchbar'>
                 <button id="search"><FaSistrix/></button>
@@ -17,8 +19,8 @@ function Navbar(){
         </div>
         <div className='rightSide'>
             <div className='links' id={showLinks ? "hidden" : ""}>
-                <a href='/home'>My Tickets</a>
-                <a href='/feedback'>Sign In</a>   
+                <Link to='/'>My Tickets</Link>
+                <Link to='/signin'>Sign In</Link>  
             </div>
         </div>
     </div>

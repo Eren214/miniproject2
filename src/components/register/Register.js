@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import './Register.css';
 
-export const Register = (props) => {
+const Register = (props) => {
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
     const [name, setName] = useState('');
@@ -26,3 +27,4 @@ export const Register = (props) => {
     </div>
     )
 }
+export default Register;
