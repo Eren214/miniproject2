@@ -1,74 +1,92 @@
-import React, { Component } from "react";
+import React from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "./Carousel2.css";
+import BasicCard from "./Card";
 
-export default class Carousel2 extends Component {
-  render() {
-    var settings = {
-      dots: true,
-      infinite: false,
-      speed: 500,
-      slidesToShow: 4,
-      slidesToScroll: 4,
-      initialSlide: 0,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
-          }
+export default function Carousel2() {
+  const slider = React.useRef(null);
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    arrows: false,
+    speed: 200,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+
+    // customPaging: function (i) {
+    //   return <p>{i + 1}</p>;
+    // },
+
+    responsive: [
+      {
+        breakpoint: 1424,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
         },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2
-          }
+      },
+
+      {
+        breakpoint: 1124,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
         },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
-    };
-    return (
-      <div>
-        <h2> Responsive </h2>
-        <Slider {...settings}>
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
-          <div>
-            <h3>7</h3>
-          </div>
-          <div>
-            <h3>8</h3>
-          </div>
-        </Slider>
-      </div>
-    );
-  }
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+    ],
+
+    
+  };
+
+  return (
+    <div className="container-fluid py-2">
+      <h4>Concerts</h4>
+      <Slider ref={slider} {...settings}>
+        {products?.map((item, index) => {
+          return <BasicCard item={item} />;
+        })}
+      </Slider>
+    </div>
+  );
 }
+
+const products = [
+  {
+    id: 1,
+    image: "./images/spongecola.jpg",
+  },
+  {
+    id: 2,
+    image: "./images/spongecola.jpg",
+  },
+  {
+    id: 3,
+    image: "./images/spongecola.jpg",
+  },
+  {
+    id: 4,
+    image: "./images/spongecola.jpg",
+  },
+
+  {
+    id: 5,
+    image: "./images/spongecola.jpg",
+  },
+  {
+    id: 6,
+    image: "./images/spongecola.jpg",
+  },
+];

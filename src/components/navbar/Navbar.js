@@ -19,8 +19,17 @@ function Navbar(){
         </div>
         <div className='rightSide'>
             <div className='links' id={showLinks ? "hidden" : ""}>
-                <Link to='/'>My Tickets</Link>
-                <Link to='/signin'>Sign In</Link>  
+                <div className="dropdown">
+                <Link id="myticket" className="myticketsbtn" to='/'>My Tickets</Link>
+                    <div className="dropdown-content">
+                        <Link>Orders</Link>
+                        <Link>My Listings</Link>
+                        <Link>My Sales</Link>
+                        <Link>Payments</Link>
+                    </div> 
+                </div>
+                <Link id="sigin" to='/signin'>Sign In
+                <img id="profile" src="./images/profile.png"/></Link>  
             </div>
         </div>
     </div>

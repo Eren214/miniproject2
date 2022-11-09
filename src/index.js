@@ -5,6 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import "slick-carousel/slick/slick.css";
+
 
 import Home from './routes/HomePage';
 import SignIn from './routes/SigninPage';

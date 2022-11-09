@@ -1,0 +1,166 @@
+.Navbar .leftSide .links{
+    max-height: 80px;
+}
+.Navbar .leftSide .links #concert,#artist,#location,#gc {
+    text-decoration: none;
+    color: rgb(10, 9, 9);
+    font-size: 15px;
+    margin-left: 50px;
+   font-weight: 600;
+    
+}
+.Navbar .leftSide .links #concert:hover{
+    color:rgb(20, 175, 175);
+}
+.Navbar .leftSide .links #artist:hover{
+    color:rgb(20, 175, 175);
+}
+.Navbar .leftSide .links #location:hover{
+    color:rgb(20, 175, 175);
+}
+.Navbar .leftSide .links #gc:hover{
+    color:rgb(20, 175, 175);
+}
+.Navbar .leftSide #hidden{
+    display:flex;
+}
+.dropbtn {
+    background:none;
+    color:rgb(10, 9, 9);
+    padding: 5px 0;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {color:rgb(20, 175, 175);}
+  
+  .dropdown:hover .dropdown-content {display:block;}
+  
+  .dropdown:hover .dropbtn {color:rgb(20, 175, 175);}
+  /*-------------Artist content-----*/
+  .artistbtn {
+    background:none;
+    color:rgb(10, 9, 9);
+    padding: 5px 0;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown2 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .artist-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .artist-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .artist-content a:hover {color:rgb(20, 175, 175);}
+  
+  .dropdown2:hover .artist-content {display: block;}
+  
+  .dropdown2:hover .artistbtn {color:rgb(20, 175, 175);}
+  /*----------Location------*/
+  .locationbtn {
+    background:none;
+    color:rgb(10, 9, 9);
+    padding: 5px 0;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown3 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .location-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .location-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .location-content a:hover {color:rgb(20, 175, 175);}
+  
+  .dropdown3:hover .location-content {display: block;}
+  
+  .dropdown3:hover .locationbtn {color:rgb(20, 175, 175);}
+  /*-------Gift Cards----*/
+  .gctbtn {
+    background:none;
+    color:rgb(10, 9, 9);
+    padding: 5px 0;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown4 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .gc-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .gc-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .gc-content a:hover {color:rgb(20, 175, 175);}
+  
+  .dropdown4:hover .gc-content {display: block;}
+  
+  .gcbtn:hover {color:rgb(20, 175, 175);}
