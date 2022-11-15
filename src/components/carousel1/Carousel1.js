@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import './Carousel2.css'
+import './Carousel1.css'
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import {Link} from 'react-router-dom';
 
-export default class Carousel2 extends Component {
+
+export default class Carousel1 extends Component {
   render() {
     var settings = {
       dots: false,
@@ -42,47 +43,57 @@ export default class Carousel2 extends Component {
       ]
     };
     return (
-      <div id="carousel2" className="container">
-        <h2>Featured Artist</h2>
+      <div id="carousel1" className="container">
+        <h2>Concerts</h2>
         <Slider {...settings}>
           <div>
-          <Link><img src="./images/Zack_Tabudlo.png"/>
-          <h6>Zack Tabudlo</h6>
+          <Link><img src="./images/december-avenue.jpg"/>
+          <h6>December Avenue</h6>
           </Link>
           </div>
           <div>
-          <Link><img src="./images/arthur_nery.jpg"/>
-          <h6>Arthur Nery</h6>
+          <Link><img src="./images/sponge_cola.jpg"/>
+            <h6>Spongecola</h6>
           </Link>
           </div>
           <div>
-          <Link><img src="./images/anji_salvacion.jpeg"/>
-          <h6>Anji Salvacion</h6>
+          <Link><img src="./images/cueshe.jpg"/>
+          <h6>Cueshe</h6>
           </Link>
           </div>
           <div>
-          <Link><img src="./images/Michael-Pangilinan.jpg"/>
-          <h6>Michael Pangilinan</h6>
+          <Link><img src="./images/ben&ben.jpg"/>
+          <h6>Ben&Ben</h6>
           </Link>
           </div>
           <div>
-          <Link><img src="./images/Adie-Garcia.jpg"/>
-          <h6>Adie Garcia</h6>
+          <Link><img src="./images/rocksteddy.jpg"/>
+          <h6>Rocksteddy</h6>
           </Link>
           </div>
           <div>
-          <Link><img src="./images/gigi-de-lana.jpg"/>
-          <h6>Gigi de Lana</h6>
+          <Link><img src="./images/silent_sanctuary.jpg"/>
+          <h6>Silent Sanctuary</h6>
           </Link>
           </div>
           <div>
-          <Link><img src="./images/paolo_sandejas.jpg"/>
-          <h6>Paolo Sandejas</h6>
+          <Link><img src="./images/itchyworms.jpg"/>
+          <h6>Itchyworms</h6>
           </Link>
           </div>
           <div>
-          <Link><img src="./images/janine-berdin.jpg"/>
-          <h6>Janine Berdin</h6>
+          <Link><img src="./images/parokya.jpg"/>
+          <h6>Parokya ni Edgar</h6>
+          </Link>
+          </div>
+          <div>
+          <Link><img src="./images/callalily.jpg"/>
+          <h6>Callalily</h6>
+          </Link>
+          </div>
+          <div>
+          <Link><img src="./images/sandwich.jpg"/>
+          <h6>Sandwich</h6>
           </Link>
           </div>
         </Slider>

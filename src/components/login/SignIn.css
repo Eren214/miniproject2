@@ -18,21 +18,43 @@ color: #fff;
     display: block;
     margin: 10px 0;
 }
-#form-title{
-   
-    color: rgb(104, 103, 103);
-    margin-left: 80px;
-}
 #form1Example3{
     font-size: 18px;
 }
-#signin{
-    background: rgb(185, 116, 26);
-    align-items: center;
-}
+
 #email,#password{
     background: #eee;
 }
 #forgot,#register{
     text-decoration: none;
 }
+h2{
+    position: relative;
+    font-family: 'Trebuchet MS';
+    margin-left: 105px;
+    margin-right: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 15px;
+    color: rgb(104, 103, 103);
+  }
+  #branding{
+    margin-left: 20px;
+  }
+#branding Link{
+    display: flex;
+    position: relative;
+}
+ #branding #logo{
+    position: absolute;
+    width: 50px;
+    /*margin: 5px 10px ;*/
+    margin-left: 110px;
+    
+    display:inline-flex;
+  }
+#signin-form{
+    margin-left: 350px;
+    justify-content: center;
+}
+

@@ -1,20 +1,20 @@
 import React, {useState} from 'react';
 import { HiChevronRight } from "react-icons/hi";
-import { FaSistrix } from "react-icons/fa";
 import "./Navbar.css";
 import {Link} from 'react-router-dom';
+import SearchBar from '../searchbar/SearchBar';
+import DataBooks from './Data.json';
+
 
 function Navbar(){
-
     const [showLinks, setShowLinks]=useState(false);
     return(
     <div className='Navbar'>
         <div className='leftSide'>
-            <img id="logo" src="./images/ticket.png"/><h2>ticketlab</h2>
+            <Link to='/'style={{textDecoration:"none"}}><img id="brand" src="./images/ticket.png"/><h2>ticketlab</h2></Link>
             <button onClick={()=>setShowLinks(!showLinks)}>Menu<HiChevronRight id="arrow"/></button>
             <div className='searchbar'>
-                <button id="search"><FaSistrix/></button>
-                <input type="text" placeholder='    Event,artist or location' />
+                <SearchBar id="input" data={DataBooks} placeholder="Events,artist and location"/>
             </div>   
         </div>
         <div className='rightSide'>

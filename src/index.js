@@ -8,7 +8,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import "slick-carousel/slick/slick.css";
 
 
-import Home from './routes/HomePage';
+
 import SignIn from './routes/SigninPage';
 import RegisterPage from './routes/RegisterPage';
 
@@ -16,7 +16,6 @@ ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path='/' element={<App />} />
-      <Route path='/home' element={<Home />} />
       <Route path='/signin' element={<SignIn />} />
       <Route path='/register' element={<RegisterPage />} />
     </Routes>

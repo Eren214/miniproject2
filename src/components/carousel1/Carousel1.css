@@ -1,0 +1,15 @@
+#carousel1 img{
+  width:180px;
+  height: 150px;
+  border-radius: 4px;
+}
+#carousel1 h2{
+  transform: translateX(-90px);
+  font-size: 20px;
+  color: rgb(245, 67, 67);
+  font-weight: 600;
+}
+#carousel1 h6{
+  color:black;
+  width: 180px;
+}

@@ -14,11 +14,12 @@ const Register = (props) => {
     }
 
     return (
-<section  className="vh-100">
-  <div id="singin" className="container py-5 h-100">
+<section id="create-account" className="vh-100">
+  <div id="register-form" className="container py-5 h-100">
     <div className="row d-flex align-items-center justify-content-center h-100">
-    <h2 id="form-title">Create Account</h2> 
         <div className="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+        <div id="branding"><Link to='/' style={{textDecoration:"none",textAlign:"center"}}><img id="Logo" src="./images/ticket.png" /><h3>ticketlab</h3></Link></div>
+        <h2 id="form-title">Create Account</h2> 
         <form onSubmit={handleSubmit}>
             <div className="d-flex ">
                 <div className="form-outline mb-10">

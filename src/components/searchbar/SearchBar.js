@@ -1,80 +1,51 @@
-import React, {useState} from 'react';
-import './Searchbar.css';
+import React,{useState} from "react";
+import "./Searchbar.css";
+import { FaSistrix } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 
 
-const SearchBar = () => {
 
- const [searchInput, setSearchInput] = useState("");
+function SearchBar({placeholder,data}){
+  const[filteredData, setFilteredData]=useState([]);
+  const[wordEntered,setwordEntered]=useState("");
 
- const countries = [
+  const handleFilter=(event)  =>{
+    const searchWord=event.target.value
+    setwordEntered(searchWord);
+    const newFilter=data.filter((value)=>{
+      return value.title.toLowerCase().includes(searchWord.toLowerCase());
+    })
+    if(searchWord===""){
+      setFilteredData([])
+    }else
+    setFilteredData(newFilter);
+  };
 
-  { name: "Belgium", continent: "Europe" },
-  { name: "India", continent: "Asia" },
-  { name: "Bolivia", continent: "South America" },
-  { name: "Ghana", continent: "Africa" },
-  { name: "Japan", continent: "Asia" },
-  { name: "Canada", continent: "North America" },
-  { name: "New Zealand", continent: "Australasia" },
-  { name: "Italy", continent: "Europe" },
-  { name: "South Africa", continent: "Africa" },
-  { name: "China", continent: "Asia" },
-  { name: "Paraguay", continent: "South America" },
-  { name: "Usa", continent: "North America" },
-  { name: "France", continent: "Europe" },
-  { name: "Botswana", continent: "Africa" },
-  { name: "Spain", continent: "Europe" },
-  { name: "Senegal", continent: "Africa" },
-  { name: "Brazil", continent: "South America" },
-  { name: "Denmark", continent: "Europe" },
-  { name: "Mexico", continent: "South America" },
-  { name: "Australia", continent: "Australasia" },
-  { name: "Tanzania", continent: "Africa" },
-  { name: "Bangladesh", continent: "Asia" },
-  { name: "Portugal", continent: "Europe" },
-  { name: "Pakistan", continent:"Asia" },
-
-];
-
-const handleChange = (e) => {
-  e.preventDefault();
-  setSearchInput(e.target.value);
-};
-
-if (searchInput.length > 0) {
-    countries.filter((country) => {
-    return country.name.match(searchInput);
-});
+  const clearInput=()=>{
+    setFilteredData([]);
+    setwordEntered("");
+  };
+  
+  return(
+    <div className="search">
+   <div className="searchInputs">
+    <input type="text" placeholder={placeholder} value={wordEntered} onChange={handleFilter}/>
+    <div className="searchIcon">
+      {filteredData.length === 0 ? (<FaSistrix id="magnify"/>): (<FaTimes id="clearBtn" onClick={clearInput}/>)}
+      </div>
+   </div>
+   {filteredData.length != 0 &&(
+   <div className="dataResult">
+    {filteredData.slice(0,15).map((value,key)=> {
+      return(
+      <a className="dataItem" href={value.link}target="_blank">
+      <p>{value.title}</p>
+      </a>
+      );
+    })}
+   </div>
+   )}
+    </div>
+  );
 }
-
-return <div>
-
-<input
-   type="search"
-   placeholder="Search here"
-   onChange={handleChange}
-   value={searchInput} />
-
-<table>
-  <tr>
-    <th>Country</th>
-    <th>Continent</th>
-  </tr>
-
-{countries.map((country, index) => {
-
-<div>
-  <tr>
-    <td>{country.name}</td>
-    <td>{country.continent}</td>
-  </tr>
-</div>
-
-})}
-</table>
-
-</div>
-
-
-};
-
 export default SearchBar;

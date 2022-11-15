@@ -1,34 +1,15 @@
-.slick-slider {
-    /* background-color: aquamarine; */
-    padding-left: 50px;
-    padding-right: 50px;
+#carousel2 img{
+    width:180px;
+    height: 150px;
+    border-radius: 4px;
   }
-  
-  .slick-prev {
-    z-index: 1;
-    /* background-color: red !important; */
+  #carousel2 h2{
+    transform: translateX(-90px);
+    font-size: 20px;
+    color: rgb(245, 67, 67);
+    font-weight: 600;
   }
-  .slick-next {
-    z-index: 1;
-    /* background-color: red !important; */
+  #carousel2 h6{
+    color:black;
+    width: 180px;
   }
-  .slick-dots{
-    display: none !important;
-  }
-  .slick-dots li button:before {
-    color: rgb(179, 178, 178) !important;
-    font-size: 10px !important;
-    margin-top: 10px;
-  }
-  /*.slick-dots button {
-    background-color: blue !important; 
-  }*/
-  
-  .slick-dots li.slick-active button:before {
-    color: white !important;
-    /* font-size: 12px !important; */
-  }
-  .slick-slide{
-    width: 230px!important;
-  }
- 

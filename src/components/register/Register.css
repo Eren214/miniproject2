@@ -23,10 +23,7 @@ color: #fff;
     color: rgb(104, 103, 103);
     margin-left: 50px;
 }
-#signin{
-    background: rgb(185, 116, 26);
-    align-items: center;
-}
+
 #email,#password{
     background: #eee;
 }
@@ -51,3 +48,23 @@ color: #fff;
 #already{
     text-align: center;
 }
+#branding{
+    margin-left: 20px;
+  }
+#branding Link{
+    display: flex;
+    position: relative;
+}
+ #branding #Logo{
+    width: 50px;
+    /*margin: 5px 10px ;*/
+    margin-left: 110px;
+    position: absolute;
+  }
+  #register-form{
+    margin-left: 50px;
+    justify-content: center;
+  }
+  /*#create-account{
+    background-color: #7777;
+  }*/

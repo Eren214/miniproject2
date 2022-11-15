@@ -6,12 +6,16 @@
     
   }
 .footer h2{
-    font-size: 15px;
+    font-size: 20px;
     margin: 0px 0;
-    
+    font-weight: 600;
   }
   .footer p{
-    font-size: 12px;
+    font-size: 16px;
+    color: black;
+  }
+  .footer p:hover{
+    color:  rgb(20, 175, 175);
   }
   #playstore{
   height: 50px;
@@ -21,4 +25,5 @@
   #applestore{
     height: 50px;
     cursor: pointer;
-  }   
+  } 
+ 

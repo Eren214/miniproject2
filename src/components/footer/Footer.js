@@ -1,5 +1,6 @@
 import React from "react";
 import './Footer.css';
+import {Link} from 'react-router-dom';
 
 class Footer extends React.Component{
     constructor(props){
@@ -8,28 +9,28 @@ class Footer extends React.Component{
     render(){
     return(
         <section className="footer">
-            <div className="container">
+            <div className="container justify-content-evenly">
                 <div className="row">
                     <div className="col-md-3  ">
                     <h2>Useful Links</h2>
-                    <p>Privacy Policy</p>
-                    <p>Terms of Use</p>
-                    <p>Return Policy</p>
-                    <p>Discount Coupons</p>
+                    <Link><p>Privacy Policy</p></Link>
+                    <Link><p>Terms of Use</p></Link>
+                    <Link><p>Return Policy</p></Link>
+                    <Link><p>Discount Coupons</p></Link>
                     </div>
                     <div className="col-md-3 ">
                     <h2>Our Company</h2>
-                    <p>About Us</p>
-                    <p>Partners</p>
-                    <p>Careers</p>
-                    <p>Affiliate Programs</p>
+                    <Link><p>About Us</p></Link>
+                    <Link><p>Partners</p></Link>
+                    <Link><p>Careers</p></Link>
+                    <Link><p>Affiliate Programs</p></Link>
                     </div>
                     <div className="col-md-3 ">
                     <h2>Follow Us On</h2>
-                    <p>Facebook</p>
-                    <p>Instagram</p>
-                    <p>Youtube</p>
-                    <p>LinkedIn</p>
+                    <a href=""><p>Facebook</p></a>
+                    <a href=""><p>Instagram</p></a>
+                    <a href=""><p>Youtube</p></a>
+                    <a href=""><p>LinkedIn</p></a>
                     </div>
                     <div className="col-md-3 footer-image">
                     <h2>Download App</h2>

@@ -13,11 +13,11 @@ const SignIn = (props) => {
         console.log(email);
     }
 return (
-<section  className="vh-100">
-  <div id="singin" className="container py-5 h-100">
-    <div className="row d-flex align-items-center justify-content-center h-100">
-          <h2 id="form-title">Sign in to Ticketlab</h2>
+  <div id="signin-form" className="container  py-5 h-100">
+    <div className="row">
       <div className="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+      <div id="branding"><Link to='/'style={{textDecoration:"none",textAlign:"center"}}><img id="logo" src="./images/ticket.png" /><h3>ticketlab</h3></Link></div>
+      <h2 id="form-title">Sign in to Ticketlab</h2>
           <form onSubmit={handleSubmit}>
           <div className="form-outline mb-4">
             <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" id="email" className="form-control form-control-lg" placeholder="Email"/>
@@ -52,9 +52,10 @@ return (
             <p className="mb-5 pb-lg-2" >Don't have an account? <Link id="register" to='/register'>Register here</Link></p>
         </form>
       </div>
+      </div>
     </div>
-  </div>
-</section>
+    
+
 )
 }
 export default SignIn;
