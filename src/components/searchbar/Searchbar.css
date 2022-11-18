@@ -1,17 +1,19 @@
 .searchInputs{
     margin-top: 2px;
     display: flex;
+    
 }
 .search input{
     background: #f2f5f8;
-    width: 300px;
+    width: 350px;
     height: 45px;
     border: none;
     border-radius: 20px;
     font-size: 14px;
     padding-left: 15px;
     color: black;
-    margin-top: 15px;
+    margin-top: 5px;
+    
 }
 .searchIcon{
     height:45px;
@@ -19,7 +21,7 @@
     background-color: transparent;
     display: grid;
     place-items: center;
-    margin-top: 15px;
+    margin-top: 5px;
     position: relative;
 }
 #magnify{
@@ -37,15 +39,17 @@ input:focus{
     font-size: 35px;
 }
 .dataResult{
-    margin-top: 220px;
-    width: 300px;
-    height: 220px;
+    /*margin-top: 220px;*/
+    width: 350px;
+    height: 230px;
     background-color: white;
     box-shadow: rgba(0,0,0,0.35)0px 5px 15px;
     overflow: hidden;
     overflow-y: auto;
     z-index: 10;
     padding-top: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .dataResult::-webkit-scrollbar{
     display: none;
@@ -60,6 +64,9 @@ input:focus{
 .dataItem p{
     margin-left: 10px;
 }
+.dataItem p:hover{
+    color:rgb(20, 175, 175);
+}
 a{
     text-decoration: none;
 }
@@ -68,4 +75,8 @@ a:hover{
 }
 #clearBtn{
     cursor: pointer;
+    font-size: 20px;
+    margin-right: 120px;
+    color: blue;
+    position: absolute;
 }

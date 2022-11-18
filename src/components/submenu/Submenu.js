@@ -6,7 +6,7 @@ function Submenu(){
 
     const [showLinks, setShowLinks]=useState(false);
     return(
-    <div className="Navbar container my-2">
+    <div id="sub-menu" className="Navbar container">
         <div className='leftSide'>
         <div className="links" id={showLinks ? "hidden" : ""}>
         <div className="dropdown">

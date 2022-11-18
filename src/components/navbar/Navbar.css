@@ -6,10 +6,11 @@
     display: flex;
 }
 .Navbar .leftSide{
-    display: flex;
+    /*display: flex;*/
     justify-content:left;
     align-items: center;
     flex: 50%;
+    
 }
 .leftSide h2{
     /*position: absolute;*/
@@ -19,12 +20,12 @@
     font-size: 30px;
     font-weight: 500;
     color: blue;
-    padding-top: 15px;
+    padding-top: 10px;
   }
   #brand{
     position: absolute;
     width: 50px;
-    margin: 10px 10px ;
+    margin: 5px 10px ;
     margin-left: 50px;
   }
 /*.searchbar{
@@ -105,7 +106,9 @@
         color: black;
     }
     .searchbar{
-        display: block; 
+        display: flex;
+        top:20px;
+        position: relative; 
     }
     
 }
@@ -126,8 +129,8 @@
         color:rgb(37, 35, 35);
         font-weight: 200;
         margin-left: 35px;
-
     }
+
     .Navbar .rightSide .links{
         display: none;
     }
@@ -158,11 +161,13 @@
     padding: 5px 0;
     font-size: 16px ;
     border: none;
+    
   }
   
   .dropdown {
     position: relative;
     display: inline-block;
+    
   }
   
   .dropdown-content {
@@ -171,7 +176,7 @@
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    /*z-index: 0;*/
     
   }
   
@@ -188,3 +193,10 @@
   .dropdown:hover .dropdown-content {display:block;}
   
   .dropdown:hover .myticketstn {color:rgb(20, 175, 175);}
+
+.searchbar{
+    z-index: 10;
+    position: absolute;
+    top: 0px;
+    margin-left: 17%;
+ }

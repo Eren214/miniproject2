@@ -5,6 +5,28 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import {Link} from 'react-router-dom';
 
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "blue", marginRight:"42px",borderRadius:"20px"}}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "blue",borderRadius:"20px"}}
+      onClick={onClick}
+    />
+  );
+}
+
 
 export default class Carousel1 extends Component {
   render() {
@@ -15,6 +37,8 @@ export default class Carousel1 extends Component {
       slidesToShow: 5,
       slidesToScroll: 4,
       initialSlide: 0,
+      nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />,
       responsive: [
         {
           breakpoint: 1024,
@@ -47,52 +71,52 @@ export default class Carousel1 extends Component {
         <h2>Concerts</h2>
         <Slider {...settings}>
           <div>
-          <Link><img src="./images/december-avenue.jpg"/>
+          <Link to='/decave'><img src="./images/december-avenue.jpg" alt="december avenue"/>
           <h6>December Avenue</h6>
           </Link>
           </div>
           <div>
-          <Link><img src="./images/sponge_cola.jpg"/>
+          <Link to='/sponcol'><img src="./images/sponge_cola.jpg" alt="sponge cola"/>
             <h6>Spongecola</h6>
           </Link>
           </div>
           <div>
-          <Link><img src="./images/cueshe.jpg"/>
+          <Link to='/cueshe'><img src="./images/cueshe.jpg" alt="cueshe"/>
           <h6>Cueshe</h6>
           </Link>
           </div>
           <div>
-          <Link><img src="./images/ben&ben.jpg"/>
+          <Link><img src="./images/ben&ben.jpg" alt="ben and ben"/>
           <h6>Ben&Ben</h6>
           </Link>
           </div>
           <div>
-          <Link><img src="./images/rocksteddy.jpg"/>
+          <Link><img src="./images/rocksteddy.jpg" alt="rocksteddy"/>
           <h6>Rocksteddy</h6>
           </Link>
           </div>
           <div>
-          <Link><img src="./images/silent_sanctuary.jpg"/>
+          <Link><img src="./images/silent_sanctuary.jpg" alt="silent sanctuary"/>
           <h6>Silent Sanctuary</h6>
           </Link>
           </div>
           <div>
-          <Link><img src="./images/itchyworms.jpg"/>
+          <Link><img src="./images/itchyworms.jpg" alt="itchyworms"/>
           <h6>Itchyworms</h6>
           </Link>
           </div>
           <div>
-          <Link><img src="./images/parokya.jpg"/>
-          <h6>Parokya ni Edgar</h6>
+          <img src="./images/parokya.jpg" alt="parokya ni edgar"/>
+          <Link to='/concert'><h6>Parokya ni Edgar</h6>
           </Link>
           </div>
           <div>
-          <Link><img src="./images/callalily.jpg"/>
+          <Link><img src="./images/callalily.jpg" alt="callalily"/>
           <h6>Callalily</h6>
           </Link>
           </div>
           <div>
-          <Link><img src="./images/sandwich.jpg"/>
+          <Link><img src="./images/sandwich.jpg" alt="sandwich"/>
           <h6>Sandwich</h6>
           </Link>
           </div>

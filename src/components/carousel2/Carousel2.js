@@ -5,6 +5,30 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import {Link} from 'react-router-dom';
 
+
+
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "blue", marginRight:"42px",borderRadius:"20px"}}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "blue",borderRadius:"20px"}}
+      onClick={onClick}
+    />
+  );
+}
+
 export default class Carousel2 extends Component {
   render() {
     var settings = {
@@ -14,6 +38,8 @@ export default class Carousel2 extends Component {
       slidesToShow: 5,
       slidesToScroll: 4,
       initialSlide: 0,
+      nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />,
       responsive: [
         {
           breakpoint: 1024,

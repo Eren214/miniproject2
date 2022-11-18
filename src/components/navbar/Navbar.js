@@ -3,7 +3,7 @@ import { HiChevronRight } from "react-icons/hi";
 import "./Navbar.css";
 import {Link} from 'react-router-dom';
 import SearchBar from '../searchbar/SearchBar';
-import DataBooks from './Data.json';
+import DataBooks from './Data';
 
 
 function Navbar(){
