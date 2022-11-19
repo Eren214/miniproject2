@@ -26,4 +26,6 @@
     height: 50px;
     cursor: pointer;
   } 
- 
+ #brand{
+  position: absolute;
+ }
